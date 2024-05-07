@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Footer, Header } from "../../UI";
 import { Confirmed } from "../../Assets";
+import '../../App.css'
 
 export default function Signup() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,7 +14,7 @@ export default function Signup() {
     switch (currentPage) {
       case 1:
         return (
-          <section className="absolute w-full bg-primaryColor">
+          <section className="absolute w-full bg-primaryColor bgScroll">
             <div className="relative bg-opacity-75">
               <div className="flex flex-col justify-start px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-56 lg:py-40 gap-5">
                 <div className="flex flex-col gap-5 lg:mt-5 mt-20">

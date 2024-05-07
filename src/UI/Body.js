@@ -14,7 +14,7 @@ export default function Body() {
         <div className="relative bg-opacity-75">
           <div className="flex flex-col justify-center items-center px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-[20rem] lg:py-80 gap-5">
             <h1 className="text-white lg:text-7xl text-2xl text-center font-bruno-ace-sc font-extrabold">
-              TRADING WITH THE ACT OF SIMPLICITY
+              TRADING WITH THE ART OF SIMPLICITY
             </h1>
             <p className="text-white lg:text-2xl text-sm text-center font-bruno-ace">
               Simplicity is the key in trading, we are here to give you the best
