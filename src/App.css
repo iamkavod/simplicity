@@ -1,38 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  background: #03121B;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.active-button {
+  font-weight: medium;
+  font-size: 1.125rem; 
+  font-family: 'Bruno Ace SC', sans-serif; 
+  letter-spacing: 0.05em;
   color: white;
+  transition: color 0.2s;
+  position: relative; 
+  text-decoration: none; 
 }
 
-.App-link {
-  color: #61dafb;
+.inactive-button {
+  background-color: #03121B;
+  color: white;
+  font-weight: medium;
+  font-size: 1.125rem; 
+  font-family: 'Bruno Ace SC', sans-serif; 
+  letter-spacing: 0.05em;
+  color: white;
+  transition: color 0.2s;
+  position: relative; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.inactive-button:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+
+.active-button::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: white;
 }

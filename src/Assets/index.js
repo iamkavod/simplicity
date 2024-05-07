@@ -1,0 +1,6 @@
+export { default as Bg_Simplicity } from './bg_simplicity.png'
+export { default as Telegram } from './telegram.png'
+export { default as X } from './x.png'
+export { default as  Right } from './right.png'
+export { default as Down } from './down.png'
+export { default as Confirmed } from './confirmed.png'
